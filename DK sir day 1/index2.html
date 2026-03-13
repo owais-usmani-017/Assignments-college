@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Owais Usmani | Software Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#8b5cf6',   /* Violet */
+            secondary: '#06b6d4', /* Cyan */
+            darkbg: '#0b0f19'
+          },
+          animation: {
+            float: 'float 6s ease-in-out infinite'
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-15px)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body class="bg-darkbg text-gray-300 scroll-smooth selection:bg-primary selection:text-white">
+
+<!-- NAVBAR -->
+<header class="fixed w-full bg-darkbg/80 backdrop-blur-xl z-50 border-b border-gray-800">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Owais Usmani</h1>
+    <nav class="space-x-6 hidden md:block text-sm">
+      <a href="#about" class="hover:text-primary transition">About</a>
+      <a href="#projects" class="hover:text-primary transition">Projects</a>
+      <a href="#skills" class="hover:text-primary transition">Skills</a>
+      <a href="#education" class="hover:text-primary transition">Education</a>
+      <a href="#contact" class="hover:text-primary transition">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="min-h-screen flex items-center justify-center px-6 pt-28 relative overflow-hidden">
+  <div class="absolute w-96 h-96 bg-primary/20 rounded-full blur-3xl top-20 left-10"></div>
+  <div class="absolute w-96 h-96 bg-secondary/20 rounded-full blur-3xl bottom-10 right-10"></div>
+
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10">
+    <div data-aos="fade-up">
+      <p class="text-secondary uppercase tracking-widest text-sm">Aspiring Software Developer</p>
+      <h2 class="text-4xl md:text-6xl font-extrabold text-white leading-tight mt-4">
+        Building <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Modern Web Experiences</span>
+      </h2>
+      <p class="mt-6 text-gray-400 max-w-xl">
+        B.Tech CSE student passionate about Data Structures, Algorithms and scalable web applications. Focused on writing clean code and building impactful projects.
+      </p>
+      <div class="mt-8 flex gap-4">
+        <a href="#contact" class="bg-gradient-to-r from-primary to-secondary px-6 py-3 rounded-xl font-semibold text-white hover:scale-105 transition">Hire Me</a>
+        <a href="mailto:owaisusmani017@gmail.com" class="border border-primary px-6 py-3 rounded-xl hover:bg-primary hover:text-white transition">Contact</a>
+      </div>
+    </div>
+
+    <div class="flex justify-center" data-aos="zoom-in">
+      <div class="w-72 h-72 rounded-full border-4 border-primary flex items-center justify-center text-gray-600 animate-float bg-gray-900">
+        Your Photo Here
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24 px-6 bg-[#0f1629]">
+  <div class="max-w-5xl mx-auto text-center" data-aos="fade-up">
+    <h3 class="text-3xl font-bold text-white">About Me</h3>
+    <p class="mt-6 text-gray-400 leading-relaxed">
+      I am a Computer Science Engineering student (2023–2027) with strong fundamentals in Data Structures, OOPS, DBMS and Operating Systems. I enjoy solving real-world problems and continuously upgrading my development skills.
+    </p>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-24 px-6">
+  <div class="max-w-7xl mx-auto">
+    <h3 class="text-3xl font-bold text-center text-white mb-16">Featured Projects</h3>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-[#111827] p-8 rounded-2xl border border-gray-800 hover:border-primary hover:-translate-y-3 transition duration-300" data-aos="fade-up">
+        <h4 class="text-xl font-semibold text-primary">Student Management System</h4>
+        <p class="mt-4 text-gray-400">Built using C++ with file handling and OOPS concepts to efficiently manage student records.</p>
+      </div>
+
+      <div class="bg-[#111827] p-8 rounded-2xl border border-gray-800 hover:border-primary hover:-translate-y-3 transition duration-300" data-aos="fade-up" data-aos-delay="100">
+        <h4 class="text-xl font-semibold text-primary">Portfolio Website</h4>
+        <p class="mt-4 text-gray-400">Responsive personal portfolio built using HTML and CSS showcasing projects and skills.</p>
+      </div>
+
+      <div class="bg-[#111827] p-8 rounded-2xl border border-gray-800 hover:border-primary hover:-translate-y-3 transition duration-300" data-aos="fade-up" data-aos-delay="200">
+        <h4 class="text-xl font-semibold text-primary">DBMS Mini Project</h4>
+        <p class="mt-4 text-gray-400">Designed relational database schema and implemented CRUD operations using SQL.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-24 px-6 bg-[#0f1629]">
+  <div class="max-w-6xl mx-auto">
+    <h3 class="text-3xl font-bold text-center text-white mb-12">Technical Skills</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="bg-[#111827] p-5 rounded-xl hover:bg-primary hover:text-white transition">C++</div>
+      <div class="bg-[#111827] p-5 rounded-xl hover:bg-primary hover:text-white transition">Java</div>
+      <div class="bg-[#111827] p-5 rounded-xl hover:bg-primary hover:text-white transition">Python</div>
+      <div class="bg-[#111827] p-5 rounded-xl hover:bg-primary hover:text-white transition">React</div>
+      <div class="bg-[#111827] p-5 rounded-xl hover:bg-primary hover:text-white transition">HTML/CSS</div>
+      <div class="bg-[#111827] p-5 rounded-xl hover:bg-primary hover:text-white transition">JavaScript</div>
+      <div class="bg-[#111827] p-5 rounded-xl hover:bg-primary hover:text-white transition">DBMS</div>
+      <div class="bg-[#111827] p-5 rounded-xl hover:bg-primary hover:text-white transition">Git & GitHub</div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="py-24 px-6">
+  <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+    <h3 class="text-3xl font-bold text-white">Education</h3>
+    <p class="mt-6 text-gray-400">B.Tech in Computer Science & Engineering (2023–2027)</p>
+    <p class="text-gray-500">Class XII – 86% | Class X – 94%</p>
+  </div>
+</section>
+
+<!-- CONTACT CTA -->
+<section id="contact" class="py-24 px-6 text-center bg-gradient-to-r from-primary/10 to-secondary/10">
+  <h3 class="text-3xl font-bold text-white">Let’s Build Something Amazing</h3>
+  <p class="mt-6 text-gray-400">Open to internships and collaboration opportunities.</p>
+  <div class="mt-8">
+    <a href="mailto:owaisusmani017@gmail.com" class="bg-gradient-to-r from-primary to-secondary px-8 py-3 rounded-xl font-semibold text-white hover:scale-105 transition">Hire Me</a>
+  </div>
+</section>
+
+<footer class="text-center py-6 border-t border-gray-800 text-gray-600">
+  © 2026 Owais Usmani. Crafted with Tailwind CSS.
+</footer>
+
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+</body>
+</html>

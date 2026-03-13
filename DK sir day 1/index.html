@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owais Usmani | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #f1f5f9;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 20px 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111827;
+            position: sticky;
+            top: 0;
+        }
+
+        header h1 {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        nav a {
+            color: #f1f5f9;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 80px 10%;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 90vh;
+        }
+
+        .hero h2 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: #38bdf8;
+            color: #0f172a;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #0ea5e9;
+        }
+
+        .skills ul {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            list-style: none;
+        }
+
+        .skills li {
+            background: #1e293b;
+            padding: 10px;
+            border-radius: 6px;
+            text-align: center;
+        }
+
+        .projects .card {
+            background: #1e293b;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .projects h3 {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111827;
+            margin-top: 40px;
+        }
+
+        @media(max-width:768px) {
+            .hero h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Owais Usmani</h1>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Hello, I'm <span>Owais Usmani</span></h2>
+    <p>B.Tech CSE Student | Aspiring Software Developer | DSA Enthusiast</p>
+    <a href="#contact" class="btn">Contact Me</a>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a Computer Science Engineering student (2023–2027) with strong interest in Data Structures, Algorithms, and Web Development. 
+        I enjoy solving problems and building projects that strengthen my understanding of core CS concepts.
+    </p>
+</section>
+
+<section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+        <li>C++</li>
+        <li>Java</li>
+        <li>Python</li>
+        <li>Data Structures</li>
+        <li>DBMS</li>
+        <li>OOPS</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Git</li>
+        <li>GitHub</li>
+    </ul>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Student Management System (C++)</h3>
+        <p>Console-based application implementing file handling and OOPS concepts to manage student records.</p>
+    </div>
+
+    <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Responsive personal portfolio built using HTML and CSS showcasing skills and projects.</p>
+    </div>
+
+    <div class="card">
+        <h3>DBMS Mini Project</h3>
+        <p>Designed database schema, implemented CRUD operations, and applied normalization concepts using SQL.</p>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: owaisusmani017@gmail.com</p>
+    <p>Phone: +91 9667577436</p>
+    <p>
+        <a href="https://github.com/owaisusmani-436" target="_blank" class="btn">GitHub</a>
+        <a href="https://www.linkedin.com/in/owais-usmani-cse/" target="_blank" class="btn">LinkedIn</a>
+    </p>
+</section>
+
+<footer>
+    <p>© 2026 Owais Usmani | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
