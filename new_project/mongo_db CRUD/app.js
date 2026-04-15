@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+require("dotenv").config();
 const app = express();
 
 const userModel = require("./usermodel");
@@ -7,9 +8,7 @@ const { name } = require("ejs");
 
 // MongoDB Connection
 mongoose
-  .connect(
-    "mongodb+srv://Arzaan:Arzaan123@cluster0.ydlwhze.mongodb.net/mongopractice?retryWrites=true&w=majority",
-  )
+  .connect(process.env.MONGODB_URI)
   .then(() => {
     console.log("MongoDB connected successfully");
   })
@@ -57,7 +56,7 @@ app.get("/readAll", async (req, res) => {
 
 app.get("/readOne", async (req, res) => {
   try {
-    const singleUser = await userModel.findOne( { username : "arzaan23"});
+    const singleUser = await userModel.findOne({ username: "arzaan23" });
     res.send(singleUser);
   } catch (err) {
     res.status(500).send(err.message);
